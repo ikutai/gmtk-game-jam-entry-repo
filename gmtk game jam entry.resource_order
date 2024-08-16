@@ -13,7 +13,6 @@
     {"name":"MACROS","order":2,"path":"scripts/MACROS/MACROS.yy",},
     {"name":"NOTES","order":3,"path":"scripts/NOTES/NOTES.yy",},
     {"name":"PlayerFunctions","order":1,"path":"scripts/PlayerFunctions/PlayerFunctions.yy",},
-    {"name":"sPlaceholderSmall","order":3,"path":"sprites/sPlaceholderSmall/sPlaceholderSmall.yy",},
     {"name":"sPlaceholderTall","order":1,"path":"sprites/sPlaceholderTall/sPlaceholderTall.yy",},
     {"name":"sWall","order":2,"path":"sprites/sWall/sWall.yy",},
   ],
