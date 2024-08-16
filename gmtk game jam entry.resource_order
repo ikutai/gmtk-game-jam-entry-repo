@@ -1,6 +1,9 @@
 {
   "FolderOrderSettings":[
+    {"name":"entities","order":4,"path":"folders/Objects/entities.yy",},
     {"name":"managers","order":1,"path":"folders/Objects/managers.yy",},
+    {"name":"entities","order":4,"path":"folders/Sprites/entities.yy",},
+    {"name":"placeholder","order":1,"path":"folders/Sprites/player/placeholder.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
