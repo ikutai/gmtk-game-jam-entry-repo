@@ -30,7 +30,7 @@ function basic_collision(){ //the basic collision function
 }		
 
 function basic_movement(){ //the basic movement function
-		//player direction
+	//player direction
 	if (hsp != 0){
 		image_xscale = sign(hsp);
 		if (hsp > 0){

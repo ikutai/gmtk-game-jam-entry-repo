@@ -7,7 +7,7 @@ vsp = 0; //vertical speed at any given frame
 
 minspd = 0.25; //minimum horizontal movement speed
 maxspd = 4; //maximum horizontal movement speed
-ispd = 05; //initial basic movement speed on button press
+ispd = 0.5; //initial basic movement speed on button press
 
 jump = -7; //jump height
 
