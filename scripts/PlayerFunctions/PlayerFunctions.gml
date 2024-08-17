@@ -38,6 +38,10 @@ function basic_collision(){ //the basic collision function
 		tall = true;
 		small = false;
 	}
+	if (place_meeting(x, y, oPowerupReset)){
+		small = false;
+		tall = false;
+	}
 }		
 
 function basic_movement(){ //the basic movement function
@@ -96,5 +100,8 @@ function check_size(){ //checks the players size and switches sprites accordingl
 	if (tall == true){
 		sprite_index = sPlaceholderTall;	
 	}
+	if (!small) && (!tall){
+		sprite_index = sPlaceholder
+	}	
 	//this function needs expanded functionality
 }

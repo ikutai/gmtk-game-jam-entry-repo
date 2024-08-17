@@ -6,8 +6,8 @@
   "name":"oPowerupTall",
   "overriddenProperties":[],
   "parent":{
-    "name":"collectables",
-    "path":"folders/Objects/entities/collectables.yy",
+    "name":"powerups",
+    "path":"folders/Objects/entities/powerups.yy",
   },
   "parentObjectId":null,
   "persistent":false,

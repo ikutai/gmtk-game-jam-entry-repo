@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"collectables",
-    "path":"folders/Sprites/entities/collectables.yy",
+    "name":"powerups",
+    "path":"folders/Sprites/entities/powerups.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

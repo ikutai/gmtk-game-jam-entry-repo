@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oPowerupSmall",
+  "%Name":"oPowerupReset",
   "eventList":[],
   "managed":true,
-  "name":"oPowerupSmall",
+  "name":"oPowerupReset",
   "overriddenProperties":[],
   "parent":{
     "name":"powerups",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPowerupSmall",
-    "path":"sprites/sPowerupSmall/sPowerupSmall.yy",
+    "name":"sPowerupReset",
+    "path":"sprites/sPowerupReset/sPowerupReset.yy",
   },
   "spriteMaskId":null,
   "visible":true,
