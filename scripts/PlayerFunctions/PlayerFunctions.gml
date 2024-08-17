@@ -2,6 +2,7 @@ function get_input(){ //uses WASD control scheme only for testing
 	key_left = keyboard_check(ord("A")); 
 	key_right = keyboard_check(ord("D")); 
 	key_jump = keyboard_check_pressed(ord("W"));
+	key_down = keyboard_check_pressed(ord("S"));
 	key_change = keyboard_check_pressed(vk_space); //changes the players size
 }
 
@@ -83,7 +84,7 @@ function check_size(){ //checks the players size and switches sprites accordingl
 		sprite_index = 	sPlaceholderSmall;
 	}
 	else{
-		sprite_index = sPlaceholderTall;	
+		sprite_index = sPlaceholder;	
 	}
 	//this function needs expanded functionality
 }

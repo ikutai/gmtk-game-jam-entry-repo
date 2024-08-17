@@ -22,6 +22,9 @@ on_wall = false; //checks if player is on a wall or not
 
 small = false; //special mechanic state
 
+//preventing potential collision bugs(?)
+key_down = 0; //(see "PlayerFunctions" script)
+
 #endregion
 
 #region //idle state
