@@ -22,7 +22,7 @@ function basic_collision(){ //the basic collision function
 		{
 			x += sign(hsp);	
 		}
-		if (abs(hsp) >= 2.5)
+		if (abs(hsp) >= 2.5  && !small)
 		{
 			var _oBWall = instance_place(x + hsp, y, oBWall);
 			instance_destroy(_oBWall)
@@ -46,11 +46,19 @@ function basic_collision(){ //the basic collision function
 		vsp = 0;
 	}
 	
-	if (place_meeting(x, y + vsp, oBWall) && (small == false)) 
+	if (place_meeting(x, y + vsp, oBWall) && !small) 
 	{
 		var _oBWall = instance_place(x, y + vsp, oBWall);
 		vsp = 0;
 		instance_destroy(_oBWall);
+	}
+	else if (place_meeting(x, y + vsp, oBWall))
+	{
+			while (!place_meeting(x, y + sign(vsp), oBWall))
+		{
+			y += sign(vsp);	
+		}
+		vsp = 0;	
 	}
 	
 	

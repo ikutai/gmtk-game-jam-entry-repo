@@ -20,7 +20,7 @@ decel_a = 0.95; //decceleration in air
 on_ground = false; //checks if player is on the ground or not
 on_wall = false; //checks if player is on a wall or not
 
-small = false; //special mechanic state
+small = true; //special mechanic state
 
 #endregion
 
