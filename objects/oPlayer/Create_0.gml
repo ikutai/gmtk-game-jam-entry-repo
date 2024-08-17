@@ -7,9 +7,9 @@ vsp = 0; //vertical speed at any given frame
 
 minspd = 0.25; //minimum horizontal movement speed
 maxspd = 4; //maximum horizontal movement speed
-ispd = 0.5; //initial basic movement speed on button press
+ispd = 0.06; //initial basic movement speed on button press
 
-jump = -7; //jump height
+jump = -7*image_yscale; //jump height
 
 grv = 0.3; //gravity constant
 acel = 0.2; //movement acceleration 

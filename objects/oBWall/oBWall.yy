@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oBWall",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oWall",
+  "name":"oBWall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -25,13 +25,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"mysprite","filters":[],"listItems":[],"multiselect":false,"name":"mysprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sBCollision","path":"sprites/sBCollision/sBCollision.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sBCollision","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCollision",
-    "path":"sprites/sCollision/sCollision.yy",
+    "name":"sBCollision",
+    "path":"sprites/sBCollision/sBCollision.yy",
   },
   "spriteMaskId":null,
   "visible":true,
