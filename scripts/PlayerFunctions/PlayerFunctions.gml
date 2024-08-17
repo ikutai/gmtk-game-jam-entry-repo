@@ -28,6 +28,16 @@ function basic_collision(){ //the basic collision function
 		vsp = 0;
 	}
 	y += vsp; 
+	
+	//powerup collision
+	if (place_meeting(x, y, oPowerupSmall)){
+		small = true;
+		tall = false;
+	}
+	if (place_meeting(x, y, oPowerupTall)){
+		tall = true;
+		small = false;
+	}
 }		
 
 function basic_movement(){ //the basic movement function
@@ -83,8 +93,8 @@ function check_size(){ //checks the players size and switches sprites accordingl
 	if (small == true){
 		sprite_index = 	sPlaceholderSmall;
 	}
-	else{
-		sprite_index = sPlaceholder;	
+	if (tall == true){
+		sprite_index = sPlaceholderTall;	
 	}
 	//this function needs expanded functionality
 }

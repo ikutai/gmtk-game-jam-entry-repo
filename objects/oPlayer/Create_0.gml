@@ -10,6 +10,8 @@ maxspd = 4; //maximum horizontal movement speed
 ispd = 0.5; //initial basic movement speed on button press
 
 jump = -7; //jump height
+jump_small = -9; //jump height (when small)
+jump_tall = -5; //jump height (when tall)
 
 grv = 0.3; //gravity constant
 acel = 0.2; //movement acceleration 
@@ -21,6 +23,7 @@ on_ground = false; //checks if player is on the ground or not
 on_wall = false; //checks if player is on a wall or not
 
 small = false; //special mechanic state
+tall = false; //special mechanic state
 
 //preventing potential collision bugs(?)
 key_down = 0; //(see "PlayerFunctions" script)
@@ -35,8 +38,6 @@ idle_state.start = function(){
 	//preventing potential collision bugs(?)
 	basic_collision(); //(see "PlayerFunctions" script)
 	
-	//for state testing and animation/sound
-	check_size(); //(see "PlayerFunctions" script)
 	image_index = 0;
 	
 	return;
@@ -45,6 +46,9 @@ idle_state.start = function(){
 idle_state.run = function(){	
 	//runs the basic movement script
 	basic_movement();
+	
+	//for state testing and animation/sound
+	check_size(); //(see "PlayerFunctions" script)
 	
 	if (hsp != 0) && (on_ground){ //if the player has horizontal speed and is on the ground
 		change_state(move_state); //then they are moving on the ground
@@ -65,8 +69,6 @@ idle_state.run = function(){
 move_state = new state(); //establishing the state
 
 move_state.start = function(){
-	//for state testing and animation/sound
-	check_size(); //(see "PlayerFunctions" script)
 	image_index = 1;
 	
 	return;	
@@ -75,6 +77,9 @@ move_state.start = function(){
 move_state.run = function(){
 	//runs the basic movement script
 	basic_movement(); //(see "PlayerFunctions" script)
+	
+	//for state testing and animation/sound
+	check_size(); //(see "PlayerFunctions" script)
 	
 	if (!on_ground){ //if the player is not on the ground
 		change_state(in_air_state);	//then they are in the air
@@ -95,8 +100,6 @@ move_state.run = function(){
 in_air_state = new state(); //establishing the state
 
 in_air_state.start = function(){
-	//for state testing and animation/sound
-	check_size(); //(see "PlayerFunctions" script)
 	image_index = 2;
 	
 	return;	
@@ -105,6 +108,9 @@ in_air_state.start = function(){
 in_air_state.run = function(){
 	//runs the basic movement script
 	basic_movement(); //(see "PlayerFunctions" script)
+	
+	//for state testing and animation/sound
+	check_size(); //(see "PlayerFunctions" script)
 	
 	if (hsp == 0) && (on_ground){ //if the player has no horizontal speed and is on the ground
 		change_state(idle_state); //then they are idle

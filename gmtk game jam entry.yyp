@@ -49,6 +49,8 @@
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oPlatform","path":"objects/oPlatform/oPlatform.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oPowerupSmall","path":"objects/oPowerupSmall/oPowerupSmall.yy",},},
+    {"id":{"name":"oPowerupTall","path":"objects/oPowerupTall/oPowerupTall.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"rParent","path":"rooms/rParent/rParent.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
