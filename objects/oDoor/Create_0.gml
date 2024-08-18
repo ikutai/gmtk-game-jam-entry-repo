@@ -3,3 +3,4 @@ must_be_smaller = false
 sprite = sDoor
 intended_room = room
 sprite_index = sprite
+depth = oPlayer.depth +1
