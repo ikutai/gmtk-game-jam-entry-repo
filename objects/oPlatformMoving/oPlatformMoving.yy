@@ -33,7 +33,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"sPlatformMoving",
     "path":"sprites/sPlatformMoving/sPlatformMoving.yy",

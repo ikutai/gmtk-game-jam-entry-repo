@@ -20,6 +20,17 @@ function basic_collision(){ //the basic collision function
 		hsp_final = 0;
 		hsp = 0;
 	}
+	
+	
+	if (place_meeting(x + hsp_final, y, oBox)) 
+	{
+		while (!place_meeting(x + sign(hsp_final), y, oBox))
+		{
+			x += sign(hsp_final);	
+		}
+		hsp_final = 0;
+		hsp = 0;
+	}
 
 
 	if (place_meeting(x + hsp_final, y, oBWall)) 
@@ -48,6 +59,16 @@ function basic_collision(){ //the basic collision function
 	if (place_meeting(x, y + vsp, oWall)) 
 	{
 		while (!place_meeting(x, y + sign(vsp), oWall))
+		{
+			y += sign(vsp);	
+		}
+		vsp = 0;
+	}
+	
+	
+	if (place_meeting(x, y + vsp, oBox)) 
+	{
+		while (!place_meeting(x, y + sign(vsp), oBox))
 		{
 			y += sign(vsp);	
 		}
