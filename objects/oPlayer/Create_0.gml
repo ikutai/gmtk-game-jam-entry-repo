@@ -3,6 +3,7 @@
 #region //variables
 
 hsp = 0; //horizontal speed at any given frame
+hsp_carry = 0; //horizontal speed on a moving platform
 vsp = 0; //vertical speed at any given frame
 
 minspd = 0.25; //minimum horizontal movement speed

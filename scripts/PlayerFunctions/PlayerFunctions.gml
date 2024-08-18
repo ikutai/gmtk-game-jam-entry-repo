@@ -7,16 +7,20 @@ function get_input(){ //uses WASD control scheme only for testing
 }
 
 function basic_collision(){ //the basic collision function
+	var hsp_final = hsp + hsp_carry
+	hsp_carry = 0;
+	
 	//horizontal collision
-	if (place_meeting(x + hsp, y, oWall)) 
+	if (place_meeting(x + hsp_final, y, oWall)) 
 	{
-		while (!place_meeting(x + sign(hsp), y, oWall))
+		while (!place_meeting(x + sign(hsp_final), y, oWall))
 		{
-			x += sign(hsp);	
+			x += sign(hsp_final);	
 		}
+		hsp_final = 0;
 		hsp = 0;
 	}
-	x += hsp; 
+	x += hsp_final; 
 	
 	//vertical collision
 	if (place_meeting(x, y + vsp, oWall)) 
