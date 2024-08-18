@@ -6,8 +6,8 @@ active = false
 
 switch active
 {
-case true:
-instance_deactivate_object(destroyid)
-case false:
-instance_activate_object(destroyid)
+	case true:
+	destroyid.turned = !active
+	case false:
+	destroyid.turned = !active
 }

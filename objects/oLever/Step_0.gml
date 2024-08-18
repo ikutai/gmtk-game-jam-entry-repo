@@ -5,9 +5,8 @@ active = !active
 
 switch active
 {
-case true:
-instance_deactivate_all(true)
-case false:
-instance_activate_all()
+	case true:
+	destroyid.turned = !active
+	case false:
+	destroyid.turned = !active
 }
-

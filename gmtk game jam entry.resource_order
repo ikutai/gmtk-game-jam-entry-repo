@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"barrier","order":9,"path":"folders/Objects/barrier.yy",},
     {"name":"entities","order":4,"path":"folders/Objects/entities.yy",},
     {"name":"enemies","order":2,"path":"folders/Objects/entities/enemies.yy",},
     {"name":"moveable objects","order":3,"path":"folders/Objects/entities/moveable objects.yy",},
@@ -10,9 +11,10 @@
     {"name":"player","order":8,"path":"folders/Objects/player.yy",},
     {"name":"entities","order":4,"path":"folders/Sprites/entities.yy",},
     {"name":"enemies","order":1,"path":"folders/Sprites/entities/enemies.yy",},
-    {"name":"switches","order":4,"path":"folders/Sprites/entities/switches.yy",},
     {"name":"moveable objects","order":3,"path":"folders/Sprites/entities/moveable objects.yy",},
     {"name":"powerups","order":2,"path":"folders/Sprites/entities/powerups.yy",},
+    {"name":"switches","order":4,"path":"folders/Sprites/entities/switches.yy",},
+    {"name":"barrier","order":7,"path":"folders/Sprites/barrier.yy",},
     {"name":"platforms","order":6,"path":"folders/Sprites/platforms.yy",},
     {"name":"placeholder","order":1,"path":"folders/Sprites/player/placeholder.yy",},
   ],
