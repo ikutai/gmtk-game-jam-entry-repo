@@ -20,7 +20,29 @@ function basic_collision(){ //the basic collision function
 		hsp_final = 0;
 		hsp = 0;
 	}
+
+
+	if (place_meeting(x + hsp_final, y, oBWall)) 
+	{
+		while (!place_meeting(x + sign(hsp_final), y, oBWall))
+		{
+			x += sign(hsp_final);	
+		}
+		if (abs(hsp_final) >= 2.5  && tall)
+		{
+			var _oBWall = instance_place(x + hsp_final, y, oBWall);
+			instance_destroy(_oBWall)
+			hsp_final = (hsp_final/2);
+			hsp = (hsp/2)
+		}
+		else
+		{
+			hsp_final = 0;
+			hsp = 0;
+		}
+	}
 	x += hsp_final; 
+	
 	
 	//vertical collision
 	if (place_meeting(x, y + vsp, oWall)) 
@@ -31,6 +53,23 @@ function basic_collision(){ //the basic collision function
 		}
 		vsp = 0;
 	}
+	
+	
+	if (place_meeting(x, y + vsp, oBWall) && tall) 
+	{
+		var _oBWall = instance_place(x, y + vsp, oBWall);
+		vsp = 0;
+		instance_destroy(_oBWall);
+	}
+	else if (place_meeting(x, y + vsp, oBWall))
+	{
+			while (!place_meeting(x, y + sign(vsp), oBWall))
+		{
+			y += sign(vsp);	
+		}
+		vsp = 0;	
+	}
+	
 	y += vsp; 
 	
 	//powerup collision
