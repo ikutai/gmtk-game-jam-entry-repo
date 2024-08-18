@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"player collision shapes",
-    "path":"folders/Objects/player collision shapes.yy",
+    "path":"folders/Objects/player/player collision shapes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
