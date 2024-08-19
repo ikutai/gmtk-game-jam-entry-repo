@@ -17,7 +17,7 @@
   "physicsDensity":0.5,
   "physicsFriction":0.0,
   "physicsGroup":1,
-  "physicsKinematic":false,
+  "physicsKinematic":true,
   "physicsLinearDamping":0.1,
   "physicsObject":true,
   "physicsRestitution":0.1,
@@ -33,7 +33,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"sBox",
     "path":"sprites/sBox/sBox.yy",
