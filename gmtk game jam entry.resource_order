@@ -32,6 +32,7 @@
     {"name":"oSwitch","order":1,"path":"objects/oSwitch/oSwitch.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
     {"name":"rFloor1","order":2,"path":"rooms/rFloor1/rFloor1.yy",},
+    {"name":"rFloor2","order":3,"path":"rooms/rFloor2/rFloor2.yy",},
     {"name":"rTest","order":1,"path":"rooms/rTest/rTest.yy",},
     {"name":"EnemyFunctions","order":4,"path":"scripts/EnemyFunctions/EnemyFunctions.yy",},
     {"name":"MACROS","order":2,"path":"scripts/MACROS/MACROS.yy",},
@@ -44,8 +45,10 @@
     {"name":"sPowerupReset","order":2,"path":"sprites/sPowerupReset/sPowerupReset.yy",},
     {"name":"sPowerupSmall","order":1,"path":"sprites/sPowerupSmall/sPowerupSmall.yy",},
     {"name":"sSwitch","order":1,"path":"sprites/sSwitch/sSwitch.yy",},
+    {"name":"sWall_tile_1","order":6,"path":"sprites/sWall_tile_1/sWall_tile_1.yy",},
     {"name":"sWall_tile","order":5,"path":"sprites/sWall_tile/sWall_tile.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
     {"name":"sWallBreak","order":3,"path":"sprites/sWallBreak/sWallBreak.yy",},
+    {"name":"tWall_1","order":1,"path":"tilesets/tWall_1/tWall_1.yy",},
   ],
 }
